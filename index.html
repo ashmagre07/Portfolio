@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/521e604830.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="Images/logo final.jpg" class="logo">
+            <ul id="sidemenu" >
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+               
+                
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>       
+        </nav>
+        <div class="header-text">
+            <p>Jr. Software Engineer</p>
+            <h1>Hi, I'm <span>Ashwini</span><br> Magre From India</h1>
+        </div>
+       </div>
+    </div>
+    <!-- ----------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/bg-black-1.avif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Jr. Software Engineer
+                        Seeking the position to utilize my skill and abilities in your
+                        organization that offers professional growth to achieve
+                        organization's goal efficiently.
+                        </p>
+                          
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contains active-tab" id="skills">
+                              <ul>
+                                  <!-- </span>designing and development -->
+                                  <li> <span>SQl</span></li>
+                                  <li> <span>Core Java</span></li>
+                                  <li> <span>HTML</span></li>
+                                  <li> <span>CSS</span></li>
+                                  <li> <span>Hibernet</span></li>
+                                  <li><span>Servlet</span></li>
+                                  <li> <span>JDBC</span></li>
+                                  <li> <span>OBJECT ORIENTED PROGRAMMING</span></li>
+                                  <li> <span>DATA STRUCTURE</span></li>
+
+
+
+                              </ul>
+                          </div>
+
+                          <div class="tab-contains" id="experince">
+                            <ul>
+                                
+                                
+                                <li><span>Software Engineer Trainee</span><br>> I have intermediate 
+                                    level proficiency in SQL as one of
+                                    the key skills I acquired during your traineeship.
+                                    <br>> I have worked with database management systems
+                                    such as MySQL, Oracle, and Microsoft SQL Server. 
+                                    <br>> During this I learn the ability to use SQL to pe</li><br>
+
+                                <li><span>Intership</span><br>> HTML, CSS, JavaScript, SQL, and Python are the
+                                    programming languages and technologies I learned
+                                    during my internship.<br>
+                                    > I learn to create responsive and user-friendly web pages
+                                    using HTML markup, CSS styling, and JavaScript for
+                                    interactivity and client-side functionality.
+                                    <br>> Along with that I gain experience on SQL queries for
+                                    data retrieval, manipulation, and database management
+                                    tasks.
+                                    <br>
+                                    </li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-contains" id="education">
+                            <ul>
+                                <li><span>B-Tech in Electronics and tele. (2022)<br>
+                                    CGPA: 8.74/10</span><br>Jawaharlal Nehru Engineering College, Aurangabad
+                                </li>
+                                <li><span>Diploma in Electronics and tele. (2019)
+                                   <br> 77.12%</span><br>Government Polytechnic, Aurangabad</li>
+                                <li><span>Matriculation ( 2016 ) <br>83.80%</span><br>Ellora High School</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  ------------------Certificates-----------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+                <div><i class="fa-solid fa-code"></i>
+                    <h2>HTML , CSS</h2>
+                    <p>Throughout the course, I've likely learned how to create and structure web pages using HTML, 
+                        incorporating elements like headings, paragraphs, lists, and forms. 
+                        Additionally, mastering CSS enables I to style these elements, control layout, 
+                        and ensure a consistent and professional look across your web pages.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div> <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p> Throughout this comprehensive course, I acquired a deep understanding of
+                         database management, data manipulation, and retrieval techniques. 
+                         The course covered a range of topics, including database design, 
+                         normalization, and advanced SQL queries. Armed with this newfound knowledge, 
+                         I am now well-equipped to efficiently manage and analyze data, making me a valuable 
+                         asset in the world of data-driven decision-making.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div ><i class="fa-brands fa-java"></i>
+                    <h2>CORE JAVA</h2>
+                    <p> Throughout this learning journey, I gained a solid foundation in Java programming, 
+                        covering key concepts such as object-oriented programming, data types, control structures, and more.
+                        The course equipped me with the skills to design and implement Java applications, laying the groundwork 
+                        for my proficiency in one of the most widely used programming languages. </p>
+                         <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--  ---------------Portfolio-------------  -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <!-- <div class="work">
+            <img src="Images/work-1.png">
+            <div class="layer">
+                <h3>Project 1</h3>
+                <p>the desciotion of project you have done..
+                    the desciotion of project you have done.</p>
+
+            </div>
+        </div> -->
+        <div class="work">
+            <img src="Images/work image.jpg">
+            <div class="layer">
+                <h3>Product Management Web API</h3>
+                <p><br>> Created a RESTful web API that allows users to manage products
+                    in a database. Use ASP.NET Web API to implement the RESTful API. 
+                   <br> > Use HTTP GET, POST, PUT, and DELETE verbs to implement the
+                    corresponding operations.
+                    <br>> Implement proper security measures, such as authentication and
+                    authorization, to protect the API from unauthorized access. </p>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/work-1.png">
+            <div class="layer">
+                <h3>Online lawyer Management</h3>
+                <p>
+                > It is a web-based application designed specifically for managing
+                    various aspects of a law firm or legal practice.   <br>
+                > We use HTML, CSS, JavaScript for manupulating the front end of
+                    the web page.   <br>
+                > In this project we provide features like client management, case
+                    tracking, document management, appointment scheduling, billing
+                    and invoicing, and reporting.
+                > We also make use of mssql to store and manage the system's data.
+                    
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+
+  </div>  
+</div>
+
+
+
+
+<!--  ---------------- contact ------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p ><i class="fa-solid fa-paper-plane"></i>ashwinimagre07@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8329729658</p>
+                <!--  this social icons is optional . If u want u can add this
+                    <div class="social-icons">
+                    <a href="https://google.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   
+
+                </div> -->
+                <a href="Images/Magre Ashwini.pdf" download class="btn btn-2">Download CV</a>
+
+           </div>
+
+           <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>  
+                <span id="msg"></span>      
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ashwini Made by myself</p>
+    </div>
+</div>
+
+<script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontains=document.getElementsByClassName("tab-contains")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains){
+               tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+
+    </script>
+    <script>
+        var sideMenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sideMenu.style.right="0px";
+        }
+        function closemenu(){
+            sideMenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwPGUgX_lh5Ng7Ve9B6USTAFh9wgYfqp4KoYfKxjTveu9VSFwHjCkJ0uJbmz5Gva7G8bA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
